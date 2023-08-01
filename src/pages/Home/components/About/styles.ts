@@ -21,6 +21,7 @@ export const AboutContainer = styled.section`
 
     @media screen and (max-width: 768px) {
         padding: 2rem;
+        
     }
 `;
 

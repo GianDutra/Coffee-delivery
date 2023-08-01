@@ -9,8 +9,8 @@ export const TextWithIconContainer = styled.div`
         padding-right: 15px;
 
         > p {
-            font-size: 90%;
-            padding-right: 10px;
+            font-size: 84%;
+            padding-right: 15px;
         }
     }
 `;
@@ -25,7 +25,7 @@ export const IconWrapper = styled.div`
     position: relative; /* Adicionado */
 
     @media screen and (max-width: 768px) {
-        margin-left: 5px;
+        margin-left: 10px;
     }
     
 `;
