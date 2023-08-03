@@ -18,6 +18,7 @@ export const SuccessContainer = styled.div`
 
   @media screen and (max-width: 768px) {
       padding-left: 2rem;
+      padding-right: 1rem;
       margin-top: 2rem;
       
       > section {
