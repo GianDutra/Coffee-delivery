@@ -1,11 +1,28 @@
-import { PaymentMethodContainer } from "./styles";
+import { useState, useEffect } from "react";
 import { CreditCard } from "phosphor-react";
+import { PaymentMethodContainer } from "./styles";
 
 export function PaymentMethodInput() {
-    return (
-        <PaymentMethodContainer>
-            <CreditCard size={16} />
-            Cartão de Crédito
-        </PaymentMethodContainer>
-    )
+  const [displayText, setDisplayText] = useState("Cartão de crédito");
+
+  useEffect(() => {
+    const handleResize = () => {
+      setDisplayText(window.innerWidth <= 768 ? "Crédito" : "Cartão de crédito");
+    };
+
+    handleResize(); // Executa uma vez ao carregar a página para definir o texto inicial
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  return (
+    <PaymentMethodContainer>
+      <CreditCard size={16} />
+      <p>{displayText}</p>
+    </PaymentMethodContainer>
+  );
 }

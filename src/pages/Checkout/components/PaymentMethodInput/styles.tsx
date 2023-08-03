@@ -15,6 +15,21 @@ export const PaymentMethodContainer = styled.div`
     border: 1px solid ${({ theme }) => theme.colors["base-button"]};
     transition: 0.4s;
 
+    @media screen and (max-width: 768px) {
+    display: flex;
+    gap: 0.3rem;
+
+    p {
+      font-size: 75%;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    svg {
+      scale: 120%;
+    }
+    }
+
   svg {
     color: ${({ theme }) => theme.colors["brand-purple"]};
   }
