@@ -49,7 +49,7 @@ export const IconWrapper = styled.button.attrs({
   transition: 0.4s;
 
   @media screen and (max-width: 768px) {
-    width: 1.875rem;
+    width: 1.475rem;
   }
 
   &:disabled {
