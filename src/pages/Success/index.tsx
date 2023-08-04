@@ -4,9 +4,29 @@ import successImage from "../../assets/success.svg"
 import { TextWithIcon } from "../../components/TextWithIcon"
 import { MapPin, Clock, CurrencyDollar } from "phosphor-react";
 import { useTheme } from "styled-components";
+import { useLocation, useNavigate } from "react-router-dom";
+import { OrderData } from "../Checkout";
+import { paymentOptions } from "../Checkout/components/CheckoutForm/PaymentMethodOptions";
+import { useEffect } from "react";
+
+interface LocationType {
+    state: OrderData
+}
 
 export function SucessPage() {
   const { colors } = useTheme();
+
+  const { state } = useLocation() as unknown as LocationType
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!state) {
+      navigate("/");
+    }
+  }, []);
+
+  if (!state) return <></>;
 
   return (
     <SuccessContainer className="container">
@@ -24,9 +44,9 @@ export function SucessPage() {
                     iconBg={colors["brand-purple"]} 
                     text={
                         <RegularText>
-                            Entrega em <strong>Rua João Daniel Martinelli, 102</strong>
+                            Entrega em <strong>{state.street}, {state.number}</strong>
                             <br />
-                            Farrapos - Porto Alegre, RS
+                            {state.district} - {state.city}, {state.uf}
                         </RegularText>
                     }
                 />
@@ -48,7 +68,7 @@ export function SucessPage() {
                         <RegularText>
                             Pagamento na entrega
                             <br />
-                            <strong>Cartão de Crédito</strong>
+                            <strong>{paymentOptions[state.paymentMethod].label}</strong>
                         </RegularText>
                     }
                 />

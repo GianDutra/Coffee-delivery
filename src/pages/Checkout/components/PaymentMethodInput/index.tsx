@@ -1,28 +1,24 @@
-import { useState, useEffect } from "react";
-import { CreditCard } from "phosphor-react";
-import { PaymentMethodContainer } from "./styles";
+import { forwardRef, InputHTMLAttributes, ReactNode } from "react";
+import { ContentContainer, PaymentMethodContainer } from "./styles";
 
-export function PaymentMethodInput() {
-  const [displayText, setDisplayText] = useState("Cartão de crédito");
+type PaymentMethodInputProps = InputHTMLAttributes<HTMLInputElement> & {
+  icon: ReactNode;
+  label: string;
+};
 
-  useEffect(() => {
-    const handleResize = () => {
-      setDisplayText(window.innerWidth <= 768 ? "Crédito" : "Cartão de crédito");
-    };
-
-    handleResize(); // Executa uma vez ao carregar a página para definir o texto inicial
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
+export const PaymentMethodInput = forwardRef<
+  HTMLInputElement,
+  PaymentMethodInputProps
+>(({ id, icon, label, ...props }, ref) => {
   return (
     <PaymentMethodContainer>
-      <CreditCard size={16} />
-      <p>{displayText}</p>
+      <input id={id} type="radio" {...props} name="paymentMethod" ref={ref} />
+      <label htmlFor={id}>
+        <ContentContainer>
+          {icon}
+          {label}
+        </ContentContainer>
+      </label>
     </PaymentMethodContainer>
   );
-}
+});
