@@ -24,7 +24,7 @@ export const CheckoutPageEmptyContainer = styled.form`
       flex-direction: column;
       padding-left: 2rem;
       overflow-x: hidden;
-      max-width: 22rem; 
+      max-width: 23rem; 
     }
 `
 
