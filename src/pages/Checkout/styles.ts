@@ -13,6 +13,20 @@ export const CheckoutPageContainer = styled.form`
       overflow-x: hidden;
     }
 `
+export const CheckoutPageEmptyContainer = styled.form`
+    width: 100%;
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      padding-left: 2rem;
+      overflow-x: hidden;
+      max-width: 22rem; 
+    }
+`
 
 export const SectionBaseStyle = styled.div`
   width: 100%;
@@ -34,6 +48,7 @@ export const EmptyCheckout = styled.div<EmptyCheckoutProps>`
   justify-content: center;
   display: 100%;
 
+    
   ${({ variant, theme }) =>
     variant === "purple" &&
     css`
