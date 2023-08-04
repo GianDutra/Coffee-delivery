@@ -88,4 +88,23 @@ export const PaymentMethodOptionsContainer = styled.div`
     grid-column: span 3;
     color: ${({ theme }) => theme.colors["base-error"]};
   }
+
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    align-items: center;
+    text-align: center;
+
+    > :nth-child(3) {
+      grid-column: span 2; /* Aqui definimos que o terceiro elemento ocupa duas colunas */
+      display: flex;
+      justify-content: center; /* Alinha horizontalmente */
+      align-items: center; /* Alinha verticalmente */
+    }
+
+    > p {
+      color: ${({ theme }) => theme.colors["base-error"]};
+    }
+  }
 `;
