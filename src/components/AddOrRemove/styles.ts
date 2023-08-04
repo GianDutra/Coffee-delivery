@@ -48,6 +48,10 @@ export const IconWrapper = styled.button.attrs({
   color: ${({ theme }) => theme.colors["brand-purple"]};
   transition: 0.4s;
 
+  @media screen and (max-width: 768px) {
+    width: 1.875rem;
+  }
+
   &:disabled {
     opacity: 0.4;
   }

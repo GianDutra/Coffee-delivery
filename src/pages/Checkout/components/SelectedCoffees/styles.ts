@@ -24,6 +24,7 @@ export const ConfirmationAndTotalSectionContainer = styled.section`
   flex-direction: column;
   gap: 0.8rem;
 
+
   > div {
     display: flex;
     align-items: center;
