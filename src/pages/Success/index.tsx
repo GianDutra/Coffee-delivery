@@ -5,12 +5,12 @@ import { TextWithIcon } from "../../components/TextWithIcon"
 import { MapPin, Clock, CurrencyDollar } from "phosphor-react";
 import { useTheme } from "styled-components";
 import { useLocation, useNavigate } from "react-router-dom";
-import { OrderData } from "../Checkout";
+import { ConfirmOrderFormData } from "../Checkout";
 import { paymentOptions } from "../Checkout/components/CheckoutForm/PaymentMethodOptions";
 import { useEffect } from "react";
 
 interface LocationType {
-    state: OrderData
+    state: ConfirmOrderFormData
 }
 
 export function SucessPage() {
