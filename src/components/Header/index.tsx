@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { HeaderButton, HeaderButtonsContainer, HeaderContainer } from "./styles";
 import coffeeLogo from "../../assets/coffee-delivery-logo.svg";
 import { MapPin, ShoppingCart } from "phosphor-react";
