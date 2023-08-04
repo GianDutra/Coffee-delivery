@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { HeaderButton, HeaderButtonsContainer, HeaderContainer } from "./styles";
 import coffeeLogo from "../../assets/coffee-delivery-logo.svg";
 import { MapPin, ShoppingCart } from "phosphor-react";
@@ -28,7 +28,7 @@ export function Header() {
         async (position) => {
           try {
             const { latitude, longitude } = position.coords;
-            const apiKey = process.env.REACT_APP_OPEN_CAGE_DATA_API_KEY; // Usar process.env para acessar a chave de API do OpenCage Data
+            const apiKey = "be86a4366bd346858d41f84823095470"; // Substitua pela sua chave de API do OpenCage Data
             const response = await axios.get(
               `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${apiKey}`
             );
