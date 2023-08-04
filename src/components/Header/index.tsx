@@ -36,17 +36,17 @@ export function Header() {
             setLocation({ city, state });
           } catch (error) {
             console.error("Erro ao buscar a localização:", error);
-            setLocation({ city: "Brasil", state: "" }); // Mostrar "Brasil" se ocorrer um erro
+            setLocation({ city: "Brasil", state: "América do Sul" }); // Mostrar "Brasil" se ocorrer um erro
           }
         },
         (error) => {
           console.error("Erro ao obter a localização do usuário:", error);
-          setLocation({ city: "Brasil", state: "" }); // Mostrar "Brasil" se o usuário negar a permissão
+          setLocation({ city: "Brasil", state: "América do Sul" }); // Mostrar "Brasil" se o usuário negar a permissão
         }
       );
     } else {
       console.error("A API de Geolocalização não está disponível neste navegador.");
-      setLocation({ city: "Brasil", state: "" }); // Mostrar "Brasil" se a API de Geolocalização não estiver disponível
+      setLocation({ city: "Brasil", state: "América do Sul" }); // Mostrar "Brasil" se a API de Geolocalização não estiver disponível
     }
   };
 
