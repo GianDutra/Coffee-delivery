@@ -17,17 +17,23 @@
 <img src="./.github/coffeeImg.png" alt="coffee" title="coffee">
 > Segundo desafio da trilha react.js da Rocketseat.
 
-## Tech Stack
+## Linguagens e Tecnologias usadas
 
-The following tools were used in the construction of the project:
+Para criar o site foi utilizado:
 
-#### **Website**  ([React](https://reactjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
+#### **Website**  ([React](https://reactjs.org/)  +  [TypeScript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev/))
 
 - **[PhosphorIcons](https://phosphoricons.com/)**
-- **[Vite](https://vitejs.dev/)**
+- **[Zod](https://zod.dev/)**
 - **[React Router](https://v5.reactrouter.com/web/guides/quick-start)**
 - **[Styled Components](https://styled-components.com/)**
 - **[React Hook Form](https://react-hook-form.com/)**
+- **[Axios](https://axios-http.com/)**
+- **[Immer](https://immerjs.github.io/immer/)**
+
+ #### **API's**
+- **[Via CEP](https://viacep.com.br/)**
+- **[Open Cage Data](https://opencagedata.com/)**
   
 ## Ajustes e melhorias
 
@@ -71,8 +77,6 @@ $ npm run dev
 
 
 ## 👨‍💼 Autor
-
-Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
 <table>
   <tr>
