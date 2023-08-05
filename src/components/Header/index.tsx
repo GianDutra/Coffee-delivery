@@ -60,7 +60,11 @@ export function Header() {
         <HeaderButtonsContainer>
           <HeaderButton variant="purple">
             <MapPin size={20} weight="fill" />
-            {location ? (location.state ? `${location.city}, ${location.state}` : location.city) : "Carregando..."}
+            {location ? (
+              location.city !== "unknown" ? `${location.city}, ${location.state}` : location.state
+            ) : (
+              "Carregando..."
+            )}
           </HeaderButton>
           <NavLink to="/checkout">
             <HeaderButton variant="yellow">
