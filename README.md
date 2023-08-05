@@ -14,7 +14,7 @@
     <img alt="coffee-delivery" src="https://img.shields.io/badge/coffee-delivery-%237159c1?style=flat&logo=ghost">
   </a>
 </p>
-<img src="./.github/coffeeImg.PNG" alt="">
+<img src="./.github/coffeeImg.png" alt="coffee" title="coffee">
 > Segundo desafio da trilha react.js da Rocketseat.
 
 ## Tech Stack
