@@ -61,7 +61,7 @@ export function Header() {
           <HeaderButton variant="purple">
             <MapPin size={20} weight="fill" />
             {location ? (
-              location.city !== "unknown" ? `${location.city}, ${location.state}` : location.state
+              location.city && location.city !== "Brasil" ? `${location.city}, ${location.state}` : "Brasil"
             ) : (
               "Carregando..."
             )}
