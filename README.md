@@ -1,27 +1,42 @@
-# React + TypeScript + Vite
+<!-- Coloque o título do seu projeto -->
+<h1 align="center">Coffee Delivery</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- Coloque uma breve descrição sobre o seu projeto -->
+<p align="center">Website realizado no quarto desafio do Ignite da RocketSeat</p>
 
-Currently, two official plugins are available:
+<!-- Coloque badges relevantes, como linguagem, tamanho do repositório, última atualização, licença, etc. -->
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/seu-usuario/seu-repositorio?color=%2304D361">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/seu-usuario/seu-repositorio">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/seu-usuario/seu-repositorio">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<!-- Coloque uma imagem ou GIF do seu projeto -->
+<div align="center"> 
+  <img alt="Nome do seu projeto" title="#nome-do-seu-projeto" src="./caminho/para/screenshot.png" />
+</div>
 
-## Expanding the ESLint configuration
+<!-- Explique como o seu projeto funciona e forneça instruções para executá-lo localmente -->
+## Como Funciona
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Pré-requisitos
 
-- Configure the top-level `parserOptions` property like this:
+[Git](https://git-scm.com)
+[Node.js](https://nodejs.org/en/)
+[VSCode](https://code.visualstudio.com/) (ou outra ferramenta de desenvolvedor)
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+#### Executando o Projeto
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+```bash
+# Clone este repositório
+$ git clone git@github.com:seu-usuario/seu-repositorio.git
+
+# Acesse a pasta do projeto pelo terminal/cmd
+$ cd seu-repositorio
+
+# Instale as dependências
+$ npm install
+
+# Execute o projeto
+$ npm start
