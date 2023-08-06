@@ -81,7 +81,7 @@ $ npm run dev
   <tr>
     <td align="center">
       <a href="#">
-        <img src="https://github.com/GianDutra.png" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+        <img src="https://github.com/GianDutra.png" width="100px;" alt="Foto do Gian no GitHub"/><br>
         <sub>
           <b>Gian Dutra</b>
         </sub>
