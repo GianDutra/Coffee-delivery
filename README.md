@@ -48,9 +48,8 @@ Além do que foi pedido para o desafio, realizei:
 
 Antes de começar, verifique se você possui instalado:
 
-* Node.js
-* Git
-* Visual Studio Code (ou semelhante)
+* [Node.js](https://nodejs.org/en/)
+* [Git](https://git-scm.com)
 
 ## 🚀 Instalando <Cofee_delivery>
 
